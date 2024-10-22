@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>Rock paper scissor</title>
+    </head>
+    <body>
+        
+       <button onclick="
+        const compmove=f1();
+        
+        let result='';
+        if(compmove==='Rock'){
+            result='Tie';
+        }else if(compmove==='Paper'){
+            result='you win';
+        }else if(compmove==='Scissor'){
+            result='you lose';
+        }
+        alert(`you choose rock.computer move is ${compmove}. ${result}`);
+         ">ROCK</button>
+       <button onclick="
+       const compmove1=f1();
+        let result1='';
+        if(compmove1==='Rock'){
+            result1='you win';
+        }else if(compmove1==='Paper'){
+            result1='Tie.';
+        }else if(compmove1==='Scissor'){
+            result1='you lose';
+        }
+        alert(`you choose paper.computer move is ${compmove1}. ${result1}`);
+          ">PAPER</button> 
+       <button onclick="
+         const compmove2=f1();
+        
+        let result2='';
+        if(compmove2==='Rock'){
+            result2='you lose';
+        }else if(compmove2==='Paper'){
+            result2='you win';
+        }else if(compmove2==='Scissor'){
+            result2='Tie.';
+        }
+        alert(`you choose scissor.computer move is ${compmove2}. ${result2}`);
+         "
+       >SCISSOR</button>
+       
+       <script>
+       function f1(){
+        const num2 = Math.random();
+        let compmove2 = '';
+        if(num2>=0 && num2< 1/3){
+            compmove2 = 'Rock';
+        }else if(num2>=1/3 && num2<2/3){
+            compmove2 = 'Paper';
+        }else if(num2>=2/3 && num2<1){
+            compmove2 = 'Scissor';
+        }
+        return compmove2;
+       }
+       </script>
+    </body>
+</html>

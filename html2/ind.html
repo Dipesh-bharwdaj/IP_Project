@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dipesh.webpage
+        </title>
+        <style>
+        .text-format{
+            font-size: 25px;
+            margin-left: 25px;
+            line-height: 40px;
+        }
+        .multimedia{
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); 
+            border: 1px solid #ccc;
+            margin-left: 25px;
+        }
+        .vid{
+            margin-left: 25px;
+            box-shadow:3px 3px 5px rgba(0, 0, 0, 0.9) ;
+            border-color: #e69191;
+            border-width:8px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            width: 240px;
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .navv{
+            margin-top:40px;
+            margin-left: 25px;
+            display: block;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-left: 25px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .cl{
+            margin-left: 25px;
+        }
+        .sb{
+            margin-left: 25px;
+        }
+        </style>
+    </head>
+    <body>
+        <p class="text-format">
+        <strong>This text is bold.</strong><br>
+        <i>This text is also italicized.</i><br>
+        <u>This text is underlined.</u><br>
+        This is <mark>highlighted</mark> text.
+        </p>
+        <img class="multimedia" src="flower.jpeg" height="200px" width="245px">
+        <video class="vid" width="250" height="200" controls>
+            <source src="DS s4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h3 class="navv">Navigation Example: </h3>
+        <nav>
+            <a href="https://dmce.ac.in/">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <h2 class="cl">Table Example</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Dipesh</td>
+            <td>19</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Sumit</td>
+            <td>25</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>35</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <form class="frm">
+        <label class="sb" for="fullname">Full Name:</label><br>
+        <input class="sb" type="text" id="fullname" name="fullname" required><br><br>
+        
+        <label class="sb" for="email">Email:</label><br>
+        <input class="sb" type="email" id="email" name="email" required><br><br>
+        
+        <label class="sb" for="message">Message:</label><br>
+        <textarea class="sb" id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <input  class="sb" type="submit" value="Submit">
+    </form>
+    </body>
+</html>
